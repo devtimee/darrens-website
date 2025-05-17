@@ -9,18 +9,130 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Darren Website</title>
 
-        <link rel="stylesheet" href="style.css">
+      
+
+
         <script src="darren.js"></script>
         <script src="scripts/test.js"></script>
     </head>
 
+    <style>
+        .book-container {
+            width: 600px;
+            height: 300px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* background-color: green; */
+            padding: 20px;
+            margin: 20px;
+            background-color: #e2e2e2;
+            /* border: 5px solid black; */
+        }
+        .book-image, .book-details {
+            /* border: 5px solid orange; */
+        }
+        .book-image {
+            float: left;
+        }
+        .book-image > img {
+            width: 120px;
+            height: 200px;
+            padding: 5px;
+        }
+        .book-details {
+            float: left;
+            margin-left: 20px;
+            /* background-color: white; */
+            padding: 10px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 10px;
+        }
+
+        .book-title {
+            font-family: 'Impact';
+            font-size: 26px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .book-container, .book-image, .book-details, button {
+            border-radius: 5px;
+        }
+
+        .book-container:hover {
+            background-color: white;
+            /* border: 1px solid #333; */
+        }
+
+        .book-image {
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .book-image:hover {
+            transform: skewY(2deg);
+            border-left: 10px solid orange;
+            padding-left: -10px;
+        }
+    </style>
+
     <body>
-        <h1 class="darrens-heading">Hello I'm Darren</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen 
-            book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
-            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
+
+        <div class="book-container">
+            <div class="book-image">
+                <img src="https://covers.openlibrary.org/b/id/14319003-L.jpg" alt="Of Mice and Men Image">
+            </div>
+
+            <div class="book-details">
+                <div class="book-title">Of Mice and Men</div>
+                <p class="author"> by John Steinbeck <span>1937</span></p>
+                <p>The second book in John Steinbeck’s labor trilogy</p>
+                <button class="more-details">Details</button>
+            </div>
+        </div>
+
+        <div class="book-container">
+            <div class="book-image">
+                <img src="https://covers.openlibrary.org/b/id/14319003-L.jpg" alt="Of Mice and Men Image">
+            </div>
+
+            <div class="book-details">
+                <div class="book-title">Of Mice and Men</div>
+                <p class="author"> by John Steinbeck <span>1937</span></p>
+                <p>The second book in John Steinbeck’s labor trilogy</p>
+                <button class="more-details">Details</button>
+            </div>
+        </div>
+
+        <div class="book-container">
+            <div class="book-image">
+                <img src="https://covers.openlibrary.org/b/id/14319003-L.jpg" alt="Of Mice and Men Image">
+            </div>
+
+            <div class="book-details">
+                <div class="book-title">Of Mice and Men</div>
+                <p class="author"> by John Steinbeck <span>1937</span></p>
+                <p>The second book in John Steinbeck’s labor trilogy</p>
+                <button class="more-details">Details</button>
+            </div>
+        </div>
+        <div class="book-container">
+            <div class="book-image">
+                <img src="https://covers.openlibrary.org/b/id/14319003-L.jpg" alt="Of Mice and Men Image">
+            </div>
+
+            <div class="book-details">
+                <div class="book-title">Of Mice and Men</div>
+                <p class="author"> by John Steinbeck <span>1937</span></p>
+                <p>The second book in John Steinbeck’s labor trilogy</p>
+                <button class="more-details">Details</button>
+            </div>
+        </div>
     </body>
 </html>
